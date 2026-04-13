@@ -27,5 +27,5 @@ export const IMG = {
 ───────────────────────────────────── */
 export const VID = {
   hero:     "/video/1.mp4", // Tu nuevo video local
-  showreel: "https://videos.pexels.com/video-files/3209804/3209804-hd_1920_1080_25fps.mp4",
+  showreel: "/video/2.mp4", // Tu nuevo video local
 };

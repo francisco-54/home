@@ -92,7 +92,7 @@ button,a{font-family:inherit;cursor:pointer}
 .ins-card:hover .i-img img{transform:scale(1.06)}
 
 .sol-card{border-radius:var(--r-lg);border:1px solid var(--rule);background:#fff;padding:40px;transition:all .45s cubic-bezier(.16,1,.3,1);position:relative;overflow:hidden}
-.sol-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)}
+.sol-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--ac-color),color-mix(in srgb,var(--ac-color) 30%,transparent));transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)}
 .sol-card:hover{transform:translateY(-4px);box-shadow:0 20px 60px rgba(10,15,30,.08)}
 .sol-card:hover::before{transform:scaleX(1)}
 
@@ -116,6 +116,13 @@ button,a{font-family:inherit;cursor:pointer}
 .f-inp,.f-sel{width:100%;padding:15px 18px;border-radius:var(--r-md);border:1px solid var(--rule);background:var(--off);font-family:var(--font-b);font-size:14px;color:var(--ink);outline:none;transition:all .2s;appearance:none}
 .f-inp:focus,.f-sel:focus{border-color:var(--blue);background:#fff;box-shadow:0 0 0 3px rgba(21,73,232,.08)}
 .f-inp::placeholder{color:rgba(10,15,30,.3)}
+
+/* ── Volume slider ── */
+.vol-slider{-webkit-appearance:none;appearance:none;width:72px;height:20px;background:transparent;outline:none;cursor:pointer;flex-shrink:0;padding:0;margin:0}
+.vol-slider::-webkit-slider-runnable-track{height:3px;border-radius:2px;background:rgba(255,255,255,.18)}
+.vol-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:12px;height:12px;border-radius:50%;background:#0EA5E9;cursor:pointer;border:none;margin-top:-4.5px;box-shadow:0 0 6px rgba(14,165,233,.7)}
+.vol-slider::-moz-range-track{height:3px;border-radius:2px;background:rgba(255,255,255,.18)}
+.vol-slider::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:#0EA5E9;cursor:pointer;border:none;box-shadow:0 0 6px rgba(14,165,233,.7)}
 
 /* ── Play button ── */
 .play-btn{width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,.15);backdrop-filter:blur(16px) saturate(160%);border:1.5px solid rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;flex-shrink:0;transition:all .35s cubic-bezier(.16,1,.3,1)}

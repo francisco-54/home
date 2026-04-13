@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # GCAB Company — Landing Page
 
 React 18 + Vite · CSS puro (sin Tailwind) · Font Awesome 6 · Unsplash + Pexels video
@@ -94,3 +95,6 @@ npm run preview
 - **Syne + Plus Jakarta Sans** — tipografías (Google Fonts CDN)
 - **Unsplash** — imágenes libres de derechos
 - **Pexels** — video libre de derechos
+=======
+# home
+>>>>>>> d1d283971d893b3639684c724059618e30b582bb
